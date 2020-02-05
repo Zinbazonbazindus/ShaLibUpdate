@@ -1,25 +1,25 @@
 # ShaLibUpdate
-Un système de téléchagement et mise à jour simple. Dans cette librarie se trouve 2 modes de fonctionnement. Commençons par découvrir ce que contient la librarie et comment l'utiliser...
+Un système de téléchagement et mise à jour simple. Dans cette librarie a 2 modes de fonctionnement. Commençons par découvrir ce que contient la librarie et comment l'utiliser...
 
 **Sachez avant que je ne suis qu'un développeur débutant, donc mon code n'est pas forcément le meilleur et le plus optimisé. Merco de votre compréhension.**
 
 ### Utilisation
-## Côté WEB — L'endroit ou vous stockerez vos fichiers pour les télécharger.
+## Côté WEB — L'endroit ou vous stockerez vos fichiers.
 C'est très simple. Tu as juste à ouvrir le fichier __webside.zip__ sur ton pc, puis glisses le contenu sur ta machine web / hébergement web. Si tout se passe bien tu devrais avoir un dossier __files__ et un fichier __informations.json__, et un fichier __index.php__ dans le dossier __files__. Le dossier __files__ sert quant à lui à mettre tes fichiers qui seront téléchargés par la lib. Tu peux donc glisser les fichiers que tu souhaites dedans.
 # Ensuite
 Tu vas devoir éditer le fichier __informations.json__ pour le configurer. Le contenu de ce fichier devrait être :
 
 ![](https://image.noelshack.com/fichiers/2020/06/3/1580924086-capture1.png)
  
-Pour commencer, un dossier peut être synchronisé en ajoutant son nom entre les "" à coté de __syncFolders__, c'est à dire que le contenu que tu rajouteras dedans sera téléchargé __seulement si__ il n'est pas présent pas dans le dossier sur ton pc, et le contenu supprimé du serveur web le sera aussi dans ton dossier sur ton pc. Pour en ajouter plusieurs, mets simplement une , entre les noms de dossiers.
+Pour commencer, un dossier peut être synchronisé en ajoutant son nom entre les "" à coté de __syncFolders__, c'est à dire que le contenu que tu rajouteras dedans sera téléchargé, ou alors remplacé si la taille est différente, et le contenu supprimé du serveur web le sera aussi dans ton dossier sur ton pc. Pour en ajouter plusieurs, mets simplement une , entre les noms de dossiers.
 
-Ensuite, tu devras récuprérer le lien qui mène au fichier __informations.json__ sur ton serveur web et le mettre dans les "" à coté de __filesFolderUrl__.
+Ensuite, tu devras récuprérer le lien qui mène au fichier __informations.json__ sur ton serveur web et le mettre dans les "" à coté de __filesFolderUrl__. Garde le __précieusement__, tu en auras besoin plus tard.
 
 Enfin, le __"enabled": "true"__ signifie que ton serveur de mise à jour est "allumé". Si tu veux "l'éteindre", tu devras __remplacer true par false__.
 
 ## Premier mode — Le mode Minecraft.
-Ce mode te permet d'indiquer le nom du dossier que tu veux, et qui sera crée dans le %appdata% (la ou se situe le .minecraft). Pour mettre un nom de dossier, remplace __foldername__ par ce que tu veux ci dessous.
-Comme expliqué plus haut, __link of the informations.json__ est juste le lien de ton fichier __informations.json__, donc pour mettre ton lien tu n'a qu'a remplacer __link of the informations.json__ par ton lien.
+Ce mode te permet d'indiquer le nom du dossier que tu veux, et ce dossier sera crée automatiquement dans le %appdata% (la ou se situe le .minecraft). Pour mettre un nom de dossier, remplace __foldername__ par ce que tu veux ci dessous.
+Comme expliqué plus haut, __link of the informations.json__ est juste le lien de ton fichier __informations.json__, donc pour mettre ton lien tu n'a qu'a remplacer __link of the informations.json__ par ton lien (voir code ci dessous).
 
 __Code :__
 * ShaMain.ShaUpdaterMC("foldername", "link of the informations.json");
