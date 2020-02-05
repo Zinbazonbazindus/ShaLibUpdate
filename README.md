@@ -49,11 +49,11 @@ Tu peux récupérer ces informations :
 
  - Evidemment pour récupérer certaines informations tu vas devoir faire une boucle. Exemple :
  
-`while(ShaMain.downloadFinish == false) { //Si le téléchargement n'est pas fini
-   		 if (ShaMain.downloadStarted = true) { //Si le téléchargement à commencé
-  			 System.out.println(ShaMain.fullprogress); //Print la progression globale.
+`	while(ShaMain.downloadFinish == false) { //Si le téléchargement n'est pas fini\n
+   		 if (ShaMain.downloadStarted = true) { //Si le téléchargement à commencé\n
+  			 System.out.println(ShaMain.fullprogress); //Print la progression globale.\n
 			}
+		}
+`
 
-   	 }`
-	 
  Tu es libre de ton code, donc tu fais ce que tu veux avec ^^.
