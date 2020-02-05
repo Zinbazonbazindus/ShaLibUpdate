@@ -44,7 +44,7 @@ Tu peux récupérer ces informations :
 * ShaMain.remoteUrl (String) //Permet de récupérer l'URL du fichier __informations.json__ mit dans le code.
 * ShaMain.updaterenabled (Boolean) //Permet de récupérer l'état du serveur de mise a jour (ligne enabled dans informations.json).
 
-Evidemment pour récupérer certaines informations tu vas devoir faire une boucle. Exemple :
+Evidemment pour récupérer certaines informations en temps réel comme le pourcentage tu vas devoir faire une boucle. Exemple :
  
 ![](https://image.noelshack.com/fichiers/2020/06/3/1580924086-capture2.png)
 
