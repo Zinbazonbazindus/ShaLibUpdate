@@ -26,8 +26,27 @@ Comme expliqué plus haut, __link of the informations.json__ est juste le lien d
 __Code :__
 * ShaMain.ShaUpdaterMC("foldername", "link of the informations.json");
 
-## Deuxième mode — Le mode autre.
+## Deuxième mode — Le mode "autre".
 Ce mode te permet de mettre le chemin d'accès que tu veux. Si le dossier n'existe pas il sera automatiquement crée. Pour mettre le chemin d'accès que tu veux, remplace __folderpath__ par le chemin souhaité, et remplace __link of the informations.json__ par le lien de ton __informations.json__.
 
 __Code :__
 * ShaMain.ShaUpdaterOTHER("folderpath", "link of the informations.json");
+
+## Informations récupérables durant le téléchargement".
+Tu peux récupérer ces informations :
+* ShaMain.globalprogress (int) //Permet de récup le pourcentage global
+* ShaMain.fileprogress (int) //Permet de récup le pourcentage du fichier en cours de téléchargement
+* ShaMain.currentDownloadLink (String) //Permet de récup le lien du fichier en cours de téléchargement
+* ShaMain.downloadFinish (boolean) //Permet de savoir si le téléchargement est fini.
+* ShaMain.downloadStarted (boolean) //Permet de savoir si le téléchargement à débuté.
+* ShaMain.downloadSpeed (String) //Permet de récupérer la vitesse de téléchargement (en ko/s ou mb/s - l'unité se met automatiquement à jour)
+* ShaMain.remoteUrl (String) //Permet de récupérer l'URL du fichier __informations.json__ mit dans le code.
+
+ - Evidemment pour récupérer certaines informations tu vas devoir faire une boucle. Exemple :
+ *while(ShaMain.downloadFinish == false) { //Si le téléchargement n'est pas fini
+   		 if (ShaMain.downloadStarted = true) { //Si le téléchargement à commencé
+   			 System.out.println(ShaMain.fullprogress); //Print la progression globale.
+			}
+
+   	 }*
+ Tu es libre de ton code, donc tu fais ce que tu veux avec ^^.
