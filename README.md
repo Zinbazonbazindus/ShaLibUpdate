@@ -8,13 +8,13 @@ Un système de téléchagement et mise à jour simple. Dans cette librarie se tr
 C'est très simple. Tu as juste à ouvrir le fichier __webside.zip__ sur ton pc, puis glisses le contenu sur ta machine web / hébergement web. Si tout se passe bien tu devrais avoir un dossier __files__ et un fichier __informations.json__, et un fichier __index.php__ dans le dossier __files__. Le dossier __files__ sert quant à lui à mettre tes fichiers qui seront téléchargés par la lib. Tu peux donc glisser les fichiers que tu souhaites dedans.
 # Ensuite
 Tu vas devoir éditer le fichier __informations.json__ pour le configurer. Le contenu de ce fichier devrait être :
-*{
-    "updater": {
-        "syncFolders": "",
-        "filesFolderUrl": "link",
-        "enabled": "true"
-      }
-}*
+* {
+*    "updater": {
+*        "syncFolders": "",
+*        "filesFolderUrl": "link",
+*        "enabled": "true"
+*      }
+* }
 Pour commencer, un dossier peut être synchronisé en ajoutant son nom entre les "" à coté de __syncFolders__, c'est à dire que le contenu que tu rajouteras dedans sera téléchargé __seulement si__ il n'est pas présent pas dans le dossier sur ton pc, et le contenu supprimé du serveur web le sera aussi dans ton dossier sur ton pc. Pour en ajouter plusieurs, mets simplement une , entre les noms de dossiers.
 
 Ensuite, tu devras récuprérer le lien qui mène au fichier __informations.json__ sur ton serveur web et le mettre dans les "" à coté de __filesFolderUrl__.
@@ -46,10 +46,10 @@ Tu peux récupérer ces informations :
 * ShaMain.updaterenabled (Boolean) //Permet de récupérer l'état du serveur de mise a jour (ligne enabled dans informations.json).
 
  - Evidemment pour récupérer certaines informations tu vas devoir faire une boucle. Exemple :
- *while(ShaMain.downloadFinish == false) { //Si le téléchargement n'est pas fini
-   		 if (ShaMain.downloadStarted = true) { //Si le téléchargement à commencé
-   			 System.out.println(ShaMain.fullprogress); //Print la progression globale.
-			}
-
-   	 }*
+* while(ShaMain.downloadFinish == false) { //Si le téléchargement n'est pas fini
+*   		 if (ShaMain.downloadStarted = true) { //Si le téléchargement à commencé
+*   			 System.out.println(ShaMain.fullprogress); //Print la progression globale.
+*			}
+*
+*   	 }
  Tu es libre de ton code, donc tu fais ce que tu veux avec ^^.
