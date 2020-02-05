@@ -7,7 +7,7 @@ Téléchargement de la lib : https://github.com/Shawiizz/ShaLibUpdate/raw/master
 Téléchargement du fichier webside.zip : https://github.com/Shawiizz/ShaLibUpdate/raw/master/webside.zip
 
 ### Utilisation
-## Côté WEB — L'endroit ou vous stockerez vos fichiers.
+## Côté WEB — L'endroit ou tu stockeras vos fichiers.
 C'est très simple. Tu as juste à ouvrir le fichier __webside.zip__ sur ton pc, puis glisses le contenu sur ta machine web / hébergement web. Si tout se passe bien tu devrais avoir un dossier __files__ et un fichier __informations.json__, et un fichier __index.php__ dans le dossier __files__. Le dossier __files__ sert quant à lui à mettre tes fichiers qui seront téléchargés par la lib. Tu peux donc glisser les fichiers que tu souhaites dedans.
 # Ensuite
 Tu vas devoir éditer le fichier __informations.json__ pour le configurer. Le contenu de ce fichier devrait être :
