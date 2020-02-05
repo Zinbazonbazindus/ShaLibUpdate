@@ -1,0 +1,18 @@
+English :
+
+At the first, i'm not a professional developer so this library is not perfect.
+This library has been created by Shawiiz_z with the help of the code of MinecraftForgeFrance's installators.
+You can distribute it, modify it and use it as you wish, but do not use it
+for fraudulent things. You can also help me to code it.
+Finally, I'm not and would not be responsible for the uses that you make / will make with this library, or of the content which
+can be downloaded with it.
+
+
+French :
+
+Tout d'abord je ne suis qu'un développeur amateur donc cette librarie n'est sans doute pas parfaite.
+Cette librarie a été créer par Shawiiz_z, avec l'aide du code de l'installateur de MinecraftForgeFrance.
+Vous pouvez la distribuer, modifier et l'utiliser comme vous le souhaitez à condition de ne pas l'utiliser
+à des fins frauduleux. Vous pouvez aussi y contribuer si vous le souhaitez.
+Enfin, je ne suis et ne serait pas responsable des usages que vous faites/ferez de cette librarie, ni du contenu qui
+pourra y être téléchargé avec.
