@@ -9,7 +9,7 @@ C'est très simple. Tu as juste à ouvrir le fichier __webside.zip__ sur ton pc,
 # Ensuite
 Tu vas devoir éditer le fichier __informations.json__ pour le configurer. Le contenu de ce fichier devrait être :
 
-https://image.noelshack.com/fichiers/2020/06/3/1580924086-capture1.png
+![](https://image.noelshack.com/fichiers/2020/06/3/1580924086-capture1.png)
  
 Pour commencer, un dossier peut être synchronisé en ajoutant son nom entre les "" à coté de __syncFolders__, c'est à dire que le contenu que tu rajouteras dedans sera téléchargé __seulement si__ il n'est pas présent pas dans le dossier sur ton pc, et le contenu supprimé du serveur web le sera aussi dans ton dossier sur ton pc. Pour en ajouter plusieurs, mets simplement une , entre les noms de dossiers.
 
@@ -43,6 +43,6 @@ Tu peux récupérer ces informations :
 
  - Evidemment pour récupérer certaines informations tu vas devoir faire une boucle. Exemple :
  
-https://image.noelshack.com/fichiers/2020/06/3/1580924086-capture2.png
+![](https://image.noelshack.com/fichiers/2020/06/3/1580924086-capture2.png)
 
  Tu es libre de ton code, donc tu fais ce que tu veux avec ^^.
