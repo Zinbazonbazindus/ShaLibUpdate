@@ -20,6 +20,12 @@ Ensuite, tu devras récuprérer le lien qui mène au fichier __informations.json
 
 Enfin, le __"enabled": "true"__ signifie que ton serveur de mise à jour est "allumé". Si tu veux "l'éteindre", tu devras __remplacer true par false__.
 
+**Une whitelist est disponible pour autoriser des fichiers à être dans le dossier que vous avez défini.**
+Pour l'activer, il te suffit de rajouter *"whiteList": "whitelistlink",* juste au dessus de *"enabled": "true"*. Une fois fait, crée un fichier __whitelist.json__ la ou se situe le __informations.json__, puis ajoutes comme sur ce screen.
+![](https://ibb.co/9cBHM2Z)
+Ensuite tu devras télécharger ce logiciel : http://www.winmd5.com/download/winmd5free.zip pour obtenir le md5 de ton fichier (sa clé en gros). Tu décompresses le fichier winmd5free.zip, tu lances WinMD5.exe, tu cliques sur browse pour séléctionner ton fichier et ensuite tu copie la chaine de caractère qui est apparue, puis pour finir remplaces md5 par cette chaine de caractère. Tu peux mettre le nom que tu veux a la place de tonfichier. Si tu veux whitelist encore un autre fichier, pense à bien mettre une , derriere la 1ere ligne pour en ajouter une deuxieme en dessous, comme ceci :
+![](https://ibb.co/xXKbkgq)
+
 ## Premier mode — Le mode Minecraft.
 Ce mode te permet d'indiquer le nom du dossier que tu veux, et ce dossier sera crée automatiquement dans le %appdata% (la ou se situe le .minecraft). Pour mettre un nom de dossier, remplace __foldername__ par ce que tu veux ci dessous.
 Comme expliqué plus haut, __link of the informations.json__ est juste le lien de ton fichier __informations.json__, donc pour mettre ton lien tu n'a qu'a remplacer __link of the informations.json__ par ton lien (voir code ci dessous).
