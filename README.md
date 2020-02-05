@@ -30,7 +30,7 @@ Ce mode te permet de mettre le chemin d'accès que tu veux. Si le dossier n'exis
 __Code :__
 * ShaMain.ShaUpdaterOTHER("folderpath", "link of the informations.json");
 
-## Informations récupérables durant le téléchargement".
+## Informations récupérables durant le téléchargement.
 Tu peux récupérer ces informations :
 * ShaMain.globalprogress (int) //Permet de récup le pourcentage global
 * ShaMain.fileprogress (int) //Permet de récup le pourcentage du fichier en cours de téléchargement
@@ -41,7 +41,7 @@ Tu peux récupérer ces informations :
 * ShaMain.remoteUrl (String) //Permet de récupérer l'URL du fichier __informations.json__ mit dans le code.
 * ShaMain.updaterenabled (Boolean) //Permet de récupérer l'état du serveur de mise a jour (ligne enabled dans informations.json).
 
- - Evidemment pour récupérer certaines informations tu vas devoir faire une boucle. Exemple :
+Evidemment pour récupérer certaines informations tu vas devoir faire une boucle. Exemple :
  
 ![](https://image.noelshack.com/fichiers/2020/06/3/1580924086-capture2.png)
 
