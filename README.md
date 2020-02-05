@@ -1,11 +1,13 @@
 # ShaLibUpdate
 Un système de téléchagement et mise à jour simple. Dans cette librarie se trouve 2 modes de fonctionnement. Commençons par découvrir ce que contient la librarie et comment l'utiliser...
 
+**Sachez avant que je ne suis qu'un développeur débutant, donc mon code n'est pas forcément le meilleur et le plus optimisé. Merco de votre compréhension.**
+
 ### Utilisation
 ## Côté WEB — L'endroit ou vous stockerez vos fichiers pour les télécharger.
-C'est très simple. Vous avez juste à ouvrir le fichier __webside.zip__ sur votre pc, puis vous glissez le contenu sur votre machine web / hébergement web. Si tout se passe bien vous devriez avoir un dossier __files__ et un fichier __informations.json__, et un fichier __index.php__ dans le dossier __files__. Le dossier __files__ sert quant à lui à mettre vos fichiers qui seront téléchargés. Vous pouvez donc glisser les fichiers que vous souhaitez dedans.
+C'est très simple. Tu as juste à ouvrir le fichier __webside.zip__ sur ton pc, puis glisses le contenu sur ta machine web / hébergement web. Si tout se passe bien tu devrais avoir un dossier __files__ et un fichier __informations.json__, et un fichier __index.php__ dans le dossier __files__. Le dossier __files__ sert quant à lui à mettre tes fichiers qui seront téléchargés par la lib. Tu peux donc glisser les fichiers que tu souhaites dedans.
 # Ensuite
-Vous allez devoir éditer le fichier __informations.json__ pour le configurer. Le contenu de ce fichier devrait être :
+Tu vas devoir éditer le fichier __informations.json__ pour le configurer. Le contenu de ce fichier devrait être :
 *{
     "updater": {
         "syncFolders": "",
@@ -13,11 +15,11 @@ Vous allez devoir éditer le fichier __informations.json__ pour le configurer. L
         "enabled": "true"
       }
 }*
-Pour commencer, un dossier peut être synchronisé en ajoutant son nom entre les "" à coté de __syncFolders__, c'est à dire que le contenu que vous rajouterez dedans sera téléchargé __seulement si__ il n'apparait pas dans votre dossier sur votre pc, et le contenu supprimé du serveur web le sera aussi dans votre dossier sur votre pc. Si vous voulez synchroniser un dossier. Pour en ajouter plusieurs, mettez simplement une , entre les noms de dossiers.
+Pour commencer, un dossier peut être synchronisé en ajoutant son nom entre les "" à coté de __syncFolders__, c'est à dire que le contenu que tu rajouteras dedans sera téléchargé __seulement si__ il n'est pas présent pas dans le dossier sur ton pc, et le contenu supprimé du serveur web le sera aussi dans ton dossier sur ton pc. Pour en ajouter plusieurs, mets simplement une , entre les noms de dossiers.
 
-Ensuite, vous devrez récuprérer le lien qui mène au fichier __informations.json__ sur votre serveur web et le mettre dans les "" à coté de __filesFolderUrl__.
+Ensuite, tu devras récuprérer le lien qui mène au fichier __informations.json__ sur ton serveur web et le mettre dans les "" à coté de __filesFolderUrl__.
 
-Enfin, le __"enabled": "true"__ signifie que votre serveur de mise à jour est "allumé". Si vous voulez "l'éteindre", vous devrez __remplacer true par false__.
+Enfin, le __"enabled": "true"__ signifie que ton serveur de mise à jour est "allumé". Si tu veux "l'éteindre", tu devras __remplacer true par false__.
 
 ## Premier mode — Le mode Minecraft.
 Ce mode te permet d'indiquer le nom du dossier que tu veux, et qui sera crée dans le %appdata% (la ou se situe le .minecraft). Pour mettre un nom de dossier, remplace __foldername__ par ce que tu veux ci dessous.
@@ -41,6 +43,7 @@ Tu peux récupérer ces informations :
 * ShaMain.downloadStarted (boolean) //Permet de savoir si le téléchargement à débuté.
 * ShaMain.downloadSpeed (String) //Permet de récupérer la vitesse de téléchargement (en ko/s ou mb/s - l'unité se met automatiquement à jour)
 * ShaMain.remoteUrl (String) //Permet de récupérer l'URL du fichier __informations.json__ mit dans le code.
+* ShaMain.updaterenabled (Boolean) //Permet de récupérer l'état du serveur de mise a jour (ligne enabled dans informations.json).
 
  - Evidemment pour récupérer certaines informations tu vas devoir faire une boucle. Exemple :
  *while(ShaMain.downloadFinish == false) { //Si le téléchargement n'est pas fini
