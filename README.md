@@ -14,7 +14,7 @@ Tu vas devoir éditer le fichier __informations.json__ pour le configurer. Le co
 
 ![](https://image.noelshack.com/fichiers/2020/06/3/1580924086-capture1.png)
  
-Pour commencer, un dossier peut être synchronisé en ajoutant son nom entre les "" à coté de __syncFolders__, c'est à dire que le contenu que tu rajouteras dedans sera téléchargé, ou alors remplacé si la taille est différente, et le contenu supprimé du serveur web le sera aussi dans ton dossier sur ton pc. Pour en ajouter plusieurs, mets simplement une , entre les noms de dossiers.
+Pour commencer, un dossier peut être synchronisé en ajoutant son nom entre les "" à coté de __syncFolders__, c'est à dire que le contenu que tu rajouteras dedans sera téléchargé, ou alors remplacé si la taille est différente, et le(s) fichier(s) supprimé(s) du serveur web le sera(ont) aussi dans ton dossier sur ton pc. Pour ajouter plusieurs dossiers à synchroniser, mets simplement une , entre les noms des dossiers.
 
 Ensuite, tu devras récuprérer le lien qui mène au fichier __informations.json__ sur ton serveur web et le mettre dans les "" à coté de __filesFolderUrl__. Garde le __précieusement__, tu en auras besoin plus tard.
 
