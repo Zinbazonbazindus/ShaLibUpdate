@@ -9,12 +9,12 @@ C'est très simple. Tu as juste à ouvrir le fichier __webside.zip__ sur ton pc,
 # Ensuite
 Tu vas devoir éditer le fichier __informations.json__ pour le configurer. Le contenu de ce fichier devrait être :
 
- `{
-    "updater": {
-        "syncFolders": "",
-        "filesFolderUrl": "link",
-        "enabled": "true"
-      }
+ `{\n
+    "updater": {\n
+        "syncFolders": "",\n
+        "filesFolderUrl": "link",\n
+        "enabled": "true"\n
+      }\n
  }`
  
 Pour commencer, un dossier peut être synchronisé en ajoutant son nom entre les "" à coté de __syncFolders__, c'est à dire que le contenu que tu rajouteras dedans sera téléchargé __seulement si__ il n'est pas présent pas dans le dossier sur ton pc, et le contenu supprimé du serveur web le sera aussi dans ton dossier sur ton pc. Pour en ajouter plusieurs, mets simplement une , entre les noms de dossiers.
@@ -53,7 +53,7 @@ Tu peux récupérer ces informations :
 		if (ShaMain.downloadStarted = true) { //Si le téléchargement à commencé\n
   			 System.out.println(ShaMain.fullprogress); //Print la progression globale.\n
 			}\n
-		}\n
-
+		}
 `
+
  Tu es libre de ton code, donc tu fais ce que tu veux avec ^^.
