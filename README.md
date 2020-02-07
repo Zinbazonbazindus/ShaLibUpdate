@@ -1,7 +1,7 @@
 # ShaLibUpdate
 Un système de téléchagement et mise à jour simple. Cette librarie permet de mettre à jour, supprimer et télécharger les fichier et elle possède 2 modes de fonctionnement. Commençons par découvrir ce que contient la librarie et comment l'utiliser...
 
-**Sachez avant que je ne suis qu'un développeur débutant, donc mon code n'est pas forcément le meilleur et le plus optimisé. Merco de votre compréhension.**
+**Sachez avant que je ne suis qu'un développeur débutant, donc mon code n'est pas forcément le meilleur et le plus optimisé. Merci de votre compréhension.**
 
 Téléchargement de la lib : https://github.com/Shawiizz/ShaLibUpdate/raw/master/ShaLibUpdate_0.2.jar
 Téléchargement du fichier webside.zip : https://github.com/Shawiizz/ShaLibUpdate/raw/master/webside.zip
